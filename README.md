@@ -1,6 +1,6 @@
 ## Simple Report Covid 19 Application
 
-This repository is in the development stage. Just done on UI but the logic still in development.
+This repository is in the development stage.
 
 ## Screenshot
 
