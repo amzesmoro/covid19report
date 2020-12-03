@@ -1,0 +1,18 @@
+#content,
+img {
+    margin: 15px;
+}
+
+p {
+    padding: 10px;
+}
+
+.otp {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 30%;    
+    --background:#dddddd;
+    --padding-start: 15px;
+}

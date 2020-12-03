@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Edit Report
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="editReportForm" (submit)="editReport()">
+    <ion-card>
+      <ion-card-header color="light">
+        <img src="assets/images/forms.svg">
+      </ion-card-header>
+      
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input formControlName="name" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Age</ion-label>
+          <ion-input formControlName="age" type="number"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label position="floating">Address</ion-label>
+          <ion-input formControlName="address" type="text"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>Gender</ion-label>
+          <ion-select formControlName="gender">
+            <ion-select-option>Female</ion-select-option>
+            <ion-select-option>Male</ion-select-option>
+          </ion-select>
+        </ion-item>
+        
+        <!-- <ion-item lines="full" class="input_location">
+          <ion-button buttonType="string">Location</ion-button>
+        </ion-item>
+        <ion-button expand="block" fill="outline" buttonType="string">Location</ion-button>
+        
+        <ion-item>
+          <ion-label position="floating">Photo</ion-label>
+          <ion-input></ion-input>
+        </ion-item> -->
+        
+        <ion-button color="tertiary" type="submit" expand="block" [disabled]="!editReportForm.valid">UPDATE</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </form>
+</ion-content>

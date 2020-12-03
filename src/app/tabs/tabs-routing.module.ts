@@ -4,31 +4,31 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        path: 'report-tab',
+        loadChildren: () => import('../report-tab/report-tab.module').then(m => m.ReportTabPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'add-report-tab',
+        loadChildren: () => import('../add-report-tab/add-report-tab.module').then(m => m.AddReportTabPageModule)
       },
       {
-        path: 'tab3',
-        loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
-      },
+        path: 'account-tab',
+        loadChildren: () => import('../account-tab/account-tab.module').then(m => m.AccountTabPageModule)
+      },  
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/report-tab',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/report-tab',
     pathMatch: 'full'
   }
 ];

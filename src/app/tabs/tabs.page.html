@@ -1,19 +1,15 @@
 <ion-tabs>
-
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
+    <ion-tab-button tab="report-tab" (click)="changeReportIcon()">
+      <ion-icon [src]="isReportSelected ? report : reportOutline"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
+    <ion-tab-button tab="add-report-tab" (click)="changeAddCircleIcon()">
+      <ion-icon [src]="isAddCircleSelected ? addCircle : addCircleOutline"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
+    <ion-tab-button tab="account-tab" (click)="changeAccountIcon()">
+      <ion-icon [src]="isAccountSelected ? person : personOutline"></ion-icon>
     </ion-tab-button>
   </ion-tab-bar>
 

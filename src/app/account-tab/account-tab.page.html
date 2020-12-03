@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Account
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card> 
+    <ion-card-header color="light">
+      <img src="assets/images/profile.svg">
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        <ion-label>Your Name</ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="location-outline" slot="start"></ion-icon>
+        <ion-label>Your Address</ion-label>      
+      </ion-item>
+      <ion-item lines="none">
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label>Your Phone Number</ion-label>      
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-button class="signOutBtn" expand="block" color="danger" (click)="signOut()">SIGN OUT</ion-button>
+    </ion-toolbar>
+  </ion-header>  
+</ion-content>

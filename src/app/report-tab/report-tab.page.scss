@@ -1,0 +1,24 @@
+.vertical-center {
+    // display: block;
+    // align-items: center;
+    // justify-content: center;
+    // height: 100%;
+    margin: 20px;    
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+ion-card {
+    margin: 10px;
+    border-radius: 20px;
+}
+
+ion-skeleton-text {
+    line-height: 20px;
+    --background-rgb: 91, 112, 163;
+    --border-radius: 10px;
+}
